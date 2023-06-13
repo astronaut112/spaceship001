@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+<ipython-input-3-c515b1fde1b9> in <cell line: 2>()
+      1 import pandas as pd
+----> 2 cnts = pd.read_csv('read-counts.txt', sep='\t', comment='#', index_col=0)
+      3 cnts.head()
+
+6 frames
+/usr/local/lib/python3.10/dist-packages/pandas/io/common.py in get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)
+    854         if ioargs.encoding and "b" not in ioargs.mode:
+    855             # Encoding
+--> 856             handle = open(
+    857                 handle,
+    858                 ioargs.mode,
+
+FileNotFoundError: [Errno 2] No such file or directory: 'read-counts.txt'
